@@ -16,5 +16,7 @@ namespace Eutech.SushisTech.DAL.Context {
         public DbSet<OrderHistory> OrderHistories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<MenuProduct> MenuProducts { get; set; }
     }
 }
