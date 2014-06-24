@@ -12,6 +12,11 @@ namespace Eutech.SushisTech.Website.Controllers {
     public class LoginController : BaseController {
         
         public ActionResult Index() {
+
+            //si le user est déjà loggué, on l'envoie vers la home
+            if(User.Identity.IsAuthenticated)
+                return RedirectToAction("index", "home"); 
+
             return View(new LoginViewModel());
         }
 
