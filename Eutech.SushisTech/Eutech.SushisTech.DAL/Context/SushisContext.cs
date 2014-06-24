@@ -1,6 +1,6 @@
-﻿using Eutech.SushisTech.DAL.Commandes;
-using Eutech.SushisTech.DAL.Produits;
-using Eutech.SushisTech.DAL.Utilisateurs;
+﻿using Eutech.SushisTech.DAL.Orders;
+using Eutech.SushisTech.DAL.Products;
+using Eutech.SushisTech.DAL.Users;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -12,9 +12,9 @@ namespace Eutech.SushisTech.DAL.Context {
 
     public class SushisContext : DbContext {
 
-        public DbSet<Commande> Commandes { get; set; }
-        public DbSet<CommandeHistory> CommandesHistories { get; set; }
-        public DbSet<Produit> Produits { get; set; }
-        public DbSet<Utilisateur> Utilisateurs { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderHistory> OrderHistories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

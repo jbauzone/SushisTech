@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eutech.SushisTech.DAL.Utilisateurs {
+namespace Eutech.SushisTech.DAL.Users {
 
-    public class Utilisateur {
+    public class User {
 
         public long Id { get; set; }
         public string Email { get; set; }
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
-        public string MotDePasse { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string Password { get; set; }
     }
 }

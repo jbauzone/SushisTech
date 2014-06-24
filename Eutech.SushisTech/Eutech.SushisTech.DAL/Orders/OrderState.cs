@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eutech.SushisTech.DAL.Commandes {
+namespace Eutech.SushisTech.DAL.Orders {
 
-    public enum CommandeEtat {
+    public enum OrderState {
 
     }
 }

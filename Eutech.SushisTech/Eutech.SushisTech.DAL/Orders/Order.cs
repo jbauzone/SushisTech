@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eutech.SushisTech.DAL.Commandes {
+namespace Eutech.SushisTech.DAL.Orders {
 
-    public class Commande {
+    public class Order {
 
         public long Id { get; set; }
     }

@@ -46,14 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commandes\Commande.cs" />
-    <Compile Include="Commandes\CommandeEtat.cs" />
-    <Compile Include="Commandes\CommandeHistory.cs" />
+    <Compile Include="Orders\Order.cs" />
+    <Compile Include="Orders\OrderState.cs" />
+    <Compile Include="Orders\OrderHistory.cs" />
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Produits\Produit.cs" />
+    <Compile Include="Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Context\SushisContext.cs" />
-    <Compile Include="Utilisateurs\Utilisateur.cs" />
+    <Compile Include="Users\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eutech.SushisTech.Models\Eutech.SushisTech.Models.csproj">
