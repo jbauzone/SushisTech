@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Securities\Encrypt.cs" />
+    <Compile Include="Users\UserBO.cs" />
+    <Compile Include="Users\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eutech.SushisTech.DAL\Eutech.SushisTech.DAL.csproj">

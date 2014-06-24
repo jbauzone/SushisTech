@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,10 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201406241836203_createDb.cs" />
-    <Compile Include="Migrations\201406241836203_createDb.Designer.cs">
-      <DependentUpon>201406241836203_createDb.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Context\ContextDAO.cs" />
     <Compile Include="Orders\Order.cs" />
     <Compile Include="Orders\OrderState.cs" />
     <Compile Include="Orders\OrderHistory.cs" />
@@ -60,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Context\SushisContext.cs" />
     <Compile Include="Users\User.cs" />
+    <Compile Include="Users\UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eutech.SushisTech.Models\Eutech.SushisTech.Models.csproj">
@@ -69,11 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201406241836203_createDb.resx">
-      <DependentUpon>201406241836203_createDb.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
