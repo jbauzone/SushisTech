@@ -46,5 +46,27 @@ namespace Eutech.SushisTech.BLL.Users {
                 Password = user.Password;
             }
         }
+
+        /// <summary>
+        /// Récupère le dernier token valide pour cet utilisateur, ou en génère un nouveau puis le retourne si aucun n'existe
+        /// </summary>
+        /// <returns></returns>
+        public string GetOrCreateToken() {
+
+            //récupération du dernier token de l'utilisateur
+            Token token = UserManager.GetToken(Id);
+
+            //aucun token n'existe pour ce user, on en génère un
+            if(token == null) {
+            
+                token = new Token();
+                token.UserId = Id;
+                token.Value = "TOKENTROPBIEN";
+                token.Date = DateTime.UtcNow;
+                token.Insert();
+            }
+
+            return token.Value;
+        }
     }
 }
