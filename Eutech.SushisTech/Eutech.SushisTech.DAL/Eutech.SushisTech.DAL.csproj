@@ -48,11 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ContextDAO.cs" />
+    <Compile Include="Migrations\201407011911221_changeProducts.cs" />
+    <Compile Include="Migrations\201407011911221_changeProducts.Designer.cs">
+      <DependentUpon>201407011911221_changeProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Orders\Order.cs" />
+    <Compile Include="Orders\OrderItem.cs" />
     <Compile Include="Orders\OrderState.cs" />
     <Compile Include="Orders\OrderHistory.cs" />
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Products\Menu.cs" />
     <Compile Include="Products\MenuProduct.cs" />
     <Compile Include="Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +73,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201407011911221_changeProducts.resx">
+      <DependentUpon>201407011911221_changeProducts.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
