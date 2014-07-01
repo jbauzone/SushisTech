@@ -1,7 +1,11 @@
-﻿
+﻿@using Eutech.SushisTech.Website.Resources.Views.Home
+@model Eutech.SushisTech.Models.Home.HomeViewModel
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = HomeIndexRes.PageTitle;
 }
 
 <h2>Index</h2>
 
+<div id="products">
+    @Html.DisplayFor(m => m.Products)
+</div>
